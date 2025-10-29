@@ -17,7 +17,7 @@ public class Sort {
             }
             interacao++;
         }
-        System.out.println("GnomeSort - nº de iterações: " + interacao);
+        System.out.println("GnomeSort - Quantidade de iterações: " + interacao);
     }
 
 
@@ -40,10 +40,9 @@ public class Sort {
                 }
             }
 
-            // Se nenhuma troca ocorreu, o array já está ordenado
             if (!troca) break;
         }
-        System.out.println("bubbleSort - nº de iterações: " + interacao);
+        System.out.println("bubbleSort - Quantidade de iterações: " + interacao);
     }
 
     static void combSort(int tamanho, int[] l){
@@ -71,7 +70,7 @@ public class Sort {
                 }
             }
         }
-        System.out.println("CombSort - nº de iterações: " + interacao);
+        System.out.println("CombSort - Quantidade de iterações: " + interacao);
     }
 
     static void selecaoSort(int tamanho, int[] l){
@@ -79,9 +78,8 @@ public class Sort {
         int interacao = 0;
         for (int i = 0; i < tamanho - 1; i++) {
             interacao++;
-            int minIndex = i; // índice do menor elemento
+            int minIndex = i; 
 
-            // Encontra o menor elemento no restante do array
             for (int j = i + 1; j < tamanho; j++) {
                 interacao++;
                 if (l[j] < l[minIndex]) {
@@ -89,12 +87,11 @@ public class Sort {
                 }
             }
 
-            // Troca o menor encontrado com o primeiro elemento da parte não ordenada
             int temp = l[i];
             l[i] = l[minIndex];
             l[minIndex] = temp;
         }
-        System.out.println("selecaoSort - nº de iterações: " + interacao);
+        System.out.println("selecaoSort - Quantidade de iterações: " + interacao);
     }
 
     static void cocktailSort(int tamanho, int[] l){
@@ -106,7 +103,6 @@ public class Sort {
         while (troca) {
             troca = false;
 
-            // Passagem da esquerda para a direita
             for (int i = start; i < end; i++) {
                 interacao++;
                 if (l[i] > l[i + 1]) {
@@ -117,15 +113,12 @@ public class Sort {
                 }
             }
 
-            // Se nada foi trocado, o array está ordenado
             if (!troca) break;
 
-            // Diminui o limite direito (último já está no lugar)
             end--;
 
             troca = false;
 
-            // Passagem da direita para a esquerda
             for (int i = end - 1; i >= start; i--) {
                 interacao++;
                 if (l[i] > l[i + 1]) {
@@ -136,9 +129,8 @@ public class Sort {
                 }
             }
 
-            // Aumenta o limite esquerdo (primeiro já está no lugar)
             start++;
         }
-        System.out.println("CocktailSort - nº de iterações: " + interacao);
+        System.out.println("CocktailSort - Quantidade de iterações: " + interacao);
     }
 }
