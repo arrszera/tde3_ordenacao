@@ -29,3 +29,12 @@ Lembrando que a regra sobre utilização de funções prontas se mantem para est
 Poste o link do seu git hub publico, com os algoritmos e os resultados em tabelas descrevendo quem foi melhor e para qual situação.
 
 Faça tabelas ranqueando quem foi melhor(fez menos trocas entre elementos), quem fez menos interações(rodou laço). 
+
+
+SEGUE OS RESULTADOS DA ATIVIDADE
+
+<img width="673" height="254" alt="image" src="https://github.com/user-attachments/assets/98f1b242-76b1-4d2f-a558-acda44ee03b3" />
+
+O Comb Sort teve o melhor equilíbrio geral. Ele realiza menos trocas que o Gnome Sort graças ao uso de gaps, o que reduz comparações diretas entre elementos distantes. Em vetores invertidos, também se destaca por evitar trocas desnecessárias.
+O Bucket Sort foi o mais eficiente em número de iterações, especialmente com vetores já ordenados ou com valores bem distribuídos. Como ele divide os dados em “baldes”, percorre menos vezes o conjunto, exigindo poucas comparações e trocas.
+O Gnome Sort, embora simples e fácil de implementar, é o menos eficiente. Ele realiza muitas trocas e iterações, pois precisa voltar várias posições sempre que encontra um elemento fora de ordem — o que o torna inadequado para listas grandes.
