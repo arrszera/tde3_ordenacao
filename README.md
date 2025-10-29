@@ -1,7 +1,7 @@
-Resolução de Problemas Estruturados - TDE3
+#Resolução de Problemas Estruturados - TDE3
 Este repositório contém implementações em Java de ordenação de dados, como Comb sort, Gnome sort e Buckt sort.
 
-Segue o comando da atividade:
+##Segue o comando da atividade:
 Estude e Implemente :
 
 Comb sort:  comb_sort.pdfLinks para um site externo.
@@ -31,7 +31,7 @@ Poste o link do seu git hub publico, com os algoritmos e os resultados em tabela
 Faça tabelas ranqueando quem foi melhor(fez menos trocas entre elementos), quem fez menos interações(rodou laço). 
 
 
-SEGUE OS RESULTADOS DA ATIVIDADE
+##SEGUE OS RESULTADOS DA ATIVIDADE
 
 <img width="673" height="254" alt="image" src="https://github.com/user-attachments/assets/98f1b242-76b1-4d2f-a558-acda44ee03b3" />
 
